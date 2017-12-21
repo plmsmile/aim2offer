@@ -1,5 +1,6 @@
 #include <iostream>
-
+// https://plmsmile.github.io/2017/07/29/interview/#题目2
+// 二分查找数组的重复值
 
 // 判断a中在[min, max]这个范围内数的个数
 // Args:
