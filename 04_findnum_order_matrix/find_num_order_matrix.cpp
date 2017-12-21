@@ -23,7 +23,8 @@ bool find(int target, std::vector<std::vector<int>> array) {
     bool exist = false;
     int i = 0;
     int j = col - 1;
-    while (exist == false && (i < col && j >= 0)) {
+    // 注意i,j的范围
+    while (exist == false && (i < row && i >= 0 && j < col && j >= 0)) {
         int t = array[i][j];
         if (target == t) {
             exist = true;
