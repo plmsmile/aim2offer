@@ -1,6 +1,6 @@
 #include <iostream>
 
-//  https://plmsmile.github.io/2017/07/29/interview/#题目1
+//  https://plmsmile.github.io/2017/07/29/aim2offer/#题目1
 //  n个数，值在[0,n-1]内，找到任意一个重复的数字
 //  把a[i]放到i上，循环，会改变原数组
 

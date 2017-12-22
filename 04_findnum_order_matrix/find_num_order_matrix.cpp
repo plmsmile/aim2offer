@@ -2,7 +2,7 @@
 # include <vector>
 
 /**
- * https://plmsmile.github.io/2017/07/29/interview/#二维数组查找
+ * https://plmsmile.github.io/2017/07/29/aim2offer/#二维数组查找
  * 一个矩阵，左到右递增，上到下递增。
  * 一行最大在右边，一列最小在上边。
  * 查找一个数，是否在这个矩阵里。

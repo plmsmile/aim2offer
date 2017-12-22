@@ -1,5 +1,10 @@
 #include <iostream>
 
+/**
+ * https://plmsmile.github.io/2017/07/29/aim2offer/#字符串替换空格
+ * 从后向前移动替换，效率高
+ *
+ **/
 
 class Solution {
 
