@@ -6,8 +6,8 @@
 using namespace std;
 
 /**
+ * https://plmsmile.github.io/2017/07/29/aim2offer/#从尾到头打印链表
  * 逆序打印链表，使用栈
- *
  **/ 
 
 struct ListNode{
