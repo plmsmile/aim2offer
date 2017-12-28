@@ -1,5 +1,9 @@
 /*
  * 插入排序：直接插入、折半插入、希尔排序
+ * https://plmsmile.github.io/2017/12/26/sort-algorithms/#插入排序
+ *
+ * @author PLM
+ * @date 2017-12-27
  */
 
 
@@ -139,6 +143,7 @@ void show_vector(const vector<int> &a) {
     cout << endl;
 }
 
+
 /*
  * 希尔排序，按照步长，去划分为多个组。对这些组分别进行插入排序
  */
@@ -158,6 +163,7 @@ void test_shell_sort() {
     shell_sort(a);
     show_vector(a);
 }
+
 
 int main() {
     test_insert();

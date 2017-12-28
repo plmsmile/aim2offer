@@ -1,10 +1,11 @@
 #include <iostream>
 #include <queue>
 
-
 using namespace std;
 
-
+/**
+ * 两个队列模拟一个栈
+ **/ 
 
 class MyStack {
     private:
@@ -15,7 +16,6 @@ class MyStack {
         bool empty(){
             return q1.empty() && q2.empty();
         }
-
 
         /**
          * 入栈，放到不为空的队列中去

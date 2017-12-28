@@ -1,5 +1,6 @@
 /*
  * 基数排序
+ * https://plmsmile.github.io/2017/12/26/sort-algorithms/#基数排序
  * 
  * @author PLM
  * @date 2017-12-28
@@ -51,7 +52,6 @@ void count_sort(vector<int>& a, int exp) {
 }
 
 
-
 /*
  * 基数排序
  */
@@ -80,6 +80,7 @@ void show(const vector<int> &a) {
     cout << endl;
 }
 
+
 void test_radix() {
 
     vector<int> a = {1, 3, 2, 7, 4};
@@ -90,8 +91,8 @@ void test_radix() {
     // cout << *max_element(a, a+4, maxfunc) << endl;
 }
 
+
 int main() {
     test_radix();
-
     return 0;
 }

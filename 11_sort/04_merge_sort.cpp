@@ -1,11 +1,15 @@
+/*
+ * https://plmsmile.github.io/2017/12/26/sort-algorithms/#归并排序
+ * 归并排序
+ * 
+ * @author PLM
+ * @date 2017-12-27
+ */
+
 #include <iostream>
 #include <vector>
 
 using namespace std;
-
-/*
- * 归并排序
- */
 
 
 void show(vector<int> a) {

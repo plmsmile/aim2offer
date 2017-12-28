@@ -1,11 +1,17 @@
+/*
+ * https://plmsmile.github.io/2017/12/26/sort-algorithms/#选择排序
+ * 选择排序：简单选择和堆排序
+ *
+ * @author PLM
+ * @date 2017-12-27
+ *
+ */
+
+
 #include <iostream>
 #include <vector>
 
 using namespace std;
-
-/*
- * 选择排序：简单选择和堆排序
- */
 
 
 /*
@@ -135,6 +141,8 @@ void test_max_heap_sort() {
     heap_sort_asc(a);
     show(a);
 }
+
+
 int main() {
     test_simple_sort();
     test_max_heap_sort();

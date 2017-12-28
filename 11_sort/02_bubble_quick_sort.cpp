@@ -1,11 +1,16 @@
+/*
+ * https://plmsmile.github.io/2017/12/26/sort-algorithms/#交换排序
+ * 交换排序：冒泡排序和快速排序
+ *
+ * @author PLM
+ * @date 2017-12-27
+ *
+ */
+
 #include <iostream>
 #include <stack>
 
 using namespace std;
-
-/*
- * 交换排序：冒泡排序和快速排序
- */
 
 
 
@@ -95,7 +100,7 @@ int partition(int* a, int l, int r) {
 
 
 /**
- * 2.2 递归快速排序
+ * 递归快速排序
  * Args:
  *      a: 数组
  *      l: 左边界
@@ -117,7 +122,7 @@ void quick_sort(int* a, int l, int r) {
 
 
 /**
- * 2.2 非递归实现快排
+ * 非递归实现快排
  **/
 void quick_sort_stack(int* a, int l, int r) {
     int i, j;
@@ -146,6 +151,7 @@ void quick_sort_stack(int* a, int l, int r) {
         }
     }
 }
+
 
 int main() {
     int a[] = {3, 1, 2, 1, 4, 7, 5};

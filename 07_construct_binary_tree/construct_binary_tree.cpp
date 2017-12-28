@@ -3,6 +3,11 @@
 
 using namespace std;
 
+/**
+ * https://plmsmile.github.io/2017/07/29/aim2offer/#前序中序建立二叉树
+ * 给前序和中序序列，递归构建二叉树
+ **/ 
+
 
 struct TreeNode {
     int val;
