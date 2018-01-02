@@ -44,7 +44,7 @@ class Solution {
 
 
 /*
- * 无剪枝的bfs
+ * 无剪枝的dfs
  */
 void Solution::backtrack(int i) {
     if (i == n) {
