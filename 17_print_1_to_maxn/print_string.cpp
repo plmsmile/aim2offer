@@ -1,5 +1,6 @@
 /*
  * 打印1到最大的n位数
+ * https://plmsmile.github.io/2017/12/29/aim2offer2/#打印1到最大的n位数-17
  *
  * @author PLM
  * @date 2018-01-03
@@ -90,6 +91,8 @@ void Solution::increment() {
         if (i < 0) {
             cout << "num char* over flow" << endl;
             this->over_flow = true;
+            // 注意释放空间
+            delete this->num;
             return;
         }
         num[i] = '0' + 1;
