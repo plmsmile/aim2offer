@@ -1,5 +1,6 @@
 /*
- * 正则表达式匹配，.*
+ * 正则表达式匹配，.*。c字符串版本
+ * https://plmsmile.github.io/2017/12/29/aim2offer2/#正则表达式匹配-19
  *
  * @author PLM
  * @date 2018-01-06
