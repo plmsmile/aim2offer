@@ -1,5 +1,6 @@
 /*
  * 删除链表中的元素
+ * https://plmsmile.github.io/2017/12/29/aim2offer2/#删除一个节点
  *
  * @author PLM
  * @date 2018-01-05

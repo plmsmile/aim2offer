@@ -1,5 +1,6 @@
 /*
  * 有序链表中，删除重复的元素
+ * https://plmsmile.github.io/2017/12/29/aim2offer2/#删除有序链表中的重复元素
  *
  * @author PLM
  * @date 2018-01-05
