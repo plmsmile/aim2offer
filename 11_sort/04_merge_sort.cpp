@@ -113,7 +113,7 @@ void merge_sort_down2up(vector<int> &a) {
 
 int main() {
     
-    vector<int> a = {8, 3, 6, 4, 2, 1, 5, 7};
+    vector<int> a = {8, 3, 6, 4, 2, 1};
     // merge_sort_up2down(a, 0, a.size());
     merge_sort_down2up(a);
     show(a);
