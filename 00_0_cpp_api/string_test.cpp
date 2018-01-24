@@ -9,6 +9,8 @@
 #include <iostream>
 #include <string>
 #include <iterator>
+#include <sstream>
+#include <iterator>
 
 
 using namespace std;
@@ -75,11 +77,44 @@ void test_string_compare_05() {
 }
 
 
+void print_find_res(string::size_type n, string const & s) {
+    if (n == string::npos) {
+        cout << "not found" << endl;
+    } else {
+        cout << "found: n=" << n << endl << s.substr(n) << endl;
+    }
+}
+
+
+void test_find_06() {
+    string s = "$ 1 2 $ 3 4 $";
+    string::size_type n;
+    n = s.find("4");
+    print_find_res(n, s);
+    n = s.find("$", 2);
+    print_find_res(n, s);
+}
+
+
+/*
+ * 字符串分割
+ */
+void test_string_split_07() {
+    string str = "hello$world$cpp$string$split";
+    vector<string> res;
+    std::copy();
+
+    
+}
+
+
+
 int main() {
     test_string_init_01();
     test_string_init_02();
     test_string_to_char_03();
     test_string_param_04("abc");
     test_string_compare_05();
+    test_find_06();
     return 0;
 }
