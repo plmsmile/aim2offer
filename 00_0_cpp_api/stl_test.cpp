@@ -92,11 +92,33 @@ void test_backinserter_04() {
 }
 
 
+void test_foreach_05() {
+    vector<int> path1{0, 1, 2, 3, 4};
+    vector<int> path2{5, 6, 7, 8, 9};
+    vector<vector<int>> res;
+    res.push_back(path1);
+    res.push_back(path2);
+    for_each(res.begin(), res.end(), [&](vector<int>& a) {
+        cout << a[0] << endl;
+    });
+}
+
+
+void test_filln_string_06() {
+    string s;
+    fill_n(back_inserter(s), 5, '*');
+    cout << s << endl;
+    cout << s.size() << endl;
+}
+
+
 
 int main() {
-    test_copy_01();
-    // test_lambda_02();
-    test_filln_03();
-    test_backinserter_04();
+    //test_copy_01();
+    //test_lambda_02();
+    //test_filln_03();
+    //test_backinserter_04();
+    //test_foreach_05();
+    test_filln_string_06();
     return 0;
 }
