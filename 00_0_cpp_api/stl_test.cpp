@@ -112,6 +112,35 @@ void test_filln_string_06() {
 }
 
 
+/*
+ * 测试stl堆的操作
+ */
+void test_heap() {
+    vector<int> v {3, 1, 4, 1, 5, 9};
+    show(v);
+    // 1. 建立堆，默认是最大堆，可以添加less参数建立最小堆
+    std::make_heap(v.begin(), v.end());
+    show(v);
+
+    // 2. 出堆，pop_heap，出掉堆顶元素，剩下成堆，把最大元素移到末尾
+    std::pop_heap(v.begin(), v.end());
+    show(v);
+    
+    // 访问最大元素，并从容器中删掉
+    int largest = v.back();
+    v.pop_back();
+    cout << "largest = " << largest << endl;
+    show(v);
+
+    // 3. 入堆
+    // 放到容器末尾
+    v.push_back(12);
+    // 入堆操作
+    std::push_heap(v.begin(), v.end());
+    show(v);
+}
+
+
 
 int main() {
     //test_copy_01();
@@ -119,6 +148,7 @@ int main() {
     //test_filln_03();
     //test_backinserter_04();
     //test_foreach_05();
-    test_filln_string_06();
+    // test_filln_string_06();
+    test_heap();
     return 0;
 }
