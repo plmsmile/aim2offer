@@ -114,6 +114,8 @@ void test_filln_string_06() {
 
 /*
  * 测试stl堆的操作
+ * 默认：最大堆，是less<int>()。根比孩子小，则交换
+ * 最小堆：greater<int>()。根比孩子大，则交换
  */
 void test_heap() {
     vector<int> v {3, 1, 4, 1, 5, 9};
