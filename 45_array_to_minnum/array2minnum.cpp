@@ -15,7 +15,7 @@
 
 using namespace std;
 
-/**
+/*
  * 用于从小到大排序的比较函数。n1<n2，返回true
  * 小于的意义：谁小谁在前。
  * Args:
@@ -34,7 +34,7 @@ bool cmp(const string& n1, const string& n2) {
     }
 }
 
-/**
+/*
  * 把数组排列成最小的数
  */
 string array2minnum(const vector<int> &a) {
