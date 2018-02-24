@@ -10,6 +10,9 @@
 #include <iostream>
 #include <iterator>
 #include <numeric>
+#include <map>
+#include <stdio.h>
+#include <functional>
 
 
 using namespace std;
@@ -142,6 +145,29 @@ void test_heap() {
     show(v);
 }
 
+void test_map() {
+    map<char, int> m;
+    m['a'] = 1;
+    m['b'] = 2;
+    m.erase('a');
+    for (map<char, int>::iterator it = m.begin(); it != m.end(); it++) {
+        printf("%c=%d\n", it->first, it->second);
+    }
+    // direct access
+    cout << m['b'] << endl;
+
+    // find
+    map<char, int>::iterator it;
+    it = m.find('a');
+    if (it != m.end()) {
+        cout << it->first << endl;
+        cout << it->second << endl;
+    }
+
+    //cout << m.find('b')->second << endl;
+    //cout << m.find('c')->first<< endl;
+}
+
 
 
 int main() {
@@ -151,6 +177,8 @@ int main() {
     //test_backinserter_04();
     //test_foreach_05();
     // test_filln_string_06();
-    test_heap();
+    // test_heap();
+    test_map();
+    getchar();
     return 0;
 }
